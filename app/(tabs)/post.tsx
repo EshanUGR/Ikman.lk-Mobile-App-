@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView } from 'react-native'
 import React from 'react'
 import PostWelcome from '@/components/postwelcome';
 import VehicleRow from '@/components/vehiclerow';
+import RectangleItem from '@/components/rectangelitem';
 const Postadd = () => {
 const items = [
   { name: "Car", icon: require("@/assets/images/car-wash.png") },
@@ -16,7 +17,7 @@ const items = [
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "white", padding: 15 }}>
-      <View style={{ backgroundColor: "#fff",marginBottom:0,marginTop:0 }}>
+      <View style={{ backgroundColor: "#fff", marginBottom: 0, marginTop: 0 }}>
         <View
           style={{
             backgroundColor: "#00FF7F",
@@ -43,10 +44,19 @@ const items = [
           paragraph="Choose an option to below to post an ad"
         />
 
-
-<VehicleRow items={items} />
-
-
+        <VehicleRow items={items} />
+        <View style={{ marginTop: -50 }}>
+          <RectangleItem
+            text="Sell in other categories"
+            backgroundColor="white"
+            iconName="arrow-forward-ios"
+          />
+          <RectangleItem
+            text="Look for something"
+            backgroundColor="white"
+            iconName="arrow-back" 
+          />
+        </View>
       </View>
     </SafeAreaView>
   );
