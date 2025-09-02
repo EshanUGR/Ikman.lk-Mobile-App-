@@ -3,6 +3,7 @@ import React from 'react'
 import PostWelcome from '@/components/postwelcome';
 import VehicleRow from '@/components/vehiclerow';
 import RectangleItem from '@/components/rectangelitem';
+import ThreePartRow from '@/components/posthreepart'
 const Postadd = () => {
 const items = [
   { name: "Car", icon: require("@/assets/images/car-wash.png") },
@@ -54,9 +55,15 @@ const items = [
           <RectangleItem
             text="Look for something"
             backgroundColor="white"
-            iconName="arrow-back" 
+            iconName="arrow-downward"
           />
         </View>
+
+        <ThreePartRow
+          leftText="Posting allowance"
+          iconName="arrow-forward-ios"
+          rightText="Posting rules"
+        />
       </View>
     </SafeAreaView>
   );

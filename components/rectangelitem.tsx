@@ -2,6 +2,8 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 
+import { AntDesign } from "@expo/vector-icons";
+
 interface RectangleItemProps {
   text: string;
   onPress?: () => void;
@@ -22,6 +24,7 @@ const RectangleItem: React.FC<RectangleItemProps> = ({
     >
       <Text style={styles.text}>{text}</Text>
       <MaterialIcons name={iconName} size={24} color="gray" />
+     
     </TouchableOpacity>
   );
 };
