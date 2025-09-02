@@ -29,7 +29,7 @@ const CustomNavbar: React.FC<CustomNavbarProps> = ({
         activeOpacity={0.7}
       >
         <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <MaterialIcons name="bookmark" size={28} color="#D3D3D3" />
+          <MaterialIcons name="bookmark" size={22} color="#D3D3D3" />
           <Text style={[styles.savedLabel, { marginLeft: 5 }]}>
             Save search
           </Text>
@@ -55,15 +55,15 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   logo: {
-    width: 50,
-    height: 50,
+    width: 80,
+    height: 60,
     marginBottom: 4,
   },
   totalAds: {
     color: "white",
     fontSize: 12,
     fontWeight: "500",
-    marginTop: -8,
+    marginTop: -28,
   },
   rightContainer: {
     alignItems: "center",

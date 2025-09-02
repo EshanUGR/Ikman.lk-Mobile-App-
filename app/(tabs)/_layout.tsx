@@ -14,7 +14,7 @@ export default function TabLayout() {
           paddingBottom: 10,
           paddingTop: 5,
         },
-        tabBarActiveTintColor: "#00FF7F", // Active icon & label color
+        tabBarActiveTintColor: "#149777", // Active icon & label color
         tabBarInactiveTintColor: "#9ca3af", // Gray for inactive
         tabBarLabelStyle: { fontSize: 12 },
       }}

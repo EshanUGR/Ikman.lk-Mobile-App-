@@ -1,6 +1,7 @@
 import { Text, View } from "react-native";
 import '../global.css'
 import { SafeAreaView } from "react-native-safe-area-context";
+import ThreeColumnRow from "@/components/threecolumnrow";
 import CustomNavbar from "@/components/customnavbar";
 export default function Index() {
   return (
@@ -11,8 +12,13 @@ export default function Index() {
         onSavedPress={() => console.log("Saved icon pressed")}
       />
 
-
-      
+      <ThreeColumnRow
+        firstIcon="location-on"
+        firstLabel="Location"
+        secondIcon="category"
+        secondLabel="Category"
+        thirdIcon="navigate-next"
+      />
     </SafeAreaView>
   );
 }
