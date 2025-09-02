@@ -1,15 +1,18 @@
 import { Text, View } from "react-native";
 import '../global.css'
+import { SafeAreaView } from "react-native-safe-area-context";
+import CustomNavbar from "@/components/customnavbar";
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text className="text-xl font-bold text-blue-500">Home</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
+      <CustomNavbar
+        logo={require("@/assets/images/logo.jpeg")} // Your logo
+        totalAds={380739} // Example total ads
+        onSavedPress={() => console.log("Saved icon pressed")}
+      />
+
+
+      
+    </SafeAreaView>
   );
 }

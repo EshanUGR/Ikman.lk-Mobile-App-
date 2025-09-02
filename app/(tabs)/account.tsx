@@ -12,7 +12,7 @@ const Account = () => {
       <View style={{ backgroundColor: "#D3D3D3" }}>
         <View
           style={{
-            backgroundColor: "#00FF7F",
+            backgroundColor: "#149777",
             padding: 15,
           }}
         >

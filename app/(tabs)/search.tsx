@@ -117,7 +117,7 @@ const Search = () => {
       </View>
       <SearchRow
         iconName="location-on"
-        iconColor="#00FF7F" // orange icon
+        iconColor="#149777" // orange icon
         labelLeft="All of Sri Lanka"
         labelLeftColor="#888" // blue
         labelLeftSize={18}
@@ -135,7 +135,7 @@ export default Search;
 
 const styles = StyleSheet.create({
   navbar: {
-    backgroundColor: "#00FF7F",
+    backgroundColor: "#149777",
     padding: 15,
     alignItems: "center", // Center content horizontally
   },

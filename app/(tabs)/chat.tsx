@@ -10,7 +10,7 @@ const Chat = () => {
       <View style={{ backgroundColor: "#fff", marginBottom: 0, marginTop: 0 }}>
         <View
           style={{
-            backgroundColor: "#00FF7F",
+            backgroundColor: "#149777",
             padding: 15,
             marginBottom: 0,
           }}
