@@ -68,10 +68,8 @@ const ads = [
         firstLabel="Location"
         secondIcon="category"
         secondLabel="Category"
-        thirdIcon="navigate-next"
+        thirdIcon="grip-lines-vertical"
       />
-
-      
 
       <AdGrid ads={ads} />
     </SafeAreaView>

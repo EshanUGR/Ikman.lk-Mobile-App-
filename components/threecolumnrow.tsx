@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
 interface Props {
   firstIcon: keyof typeof MaterialIcons.glyphMap;
@@ -33,7 +34,12 @@ const ThreeColumnRow: React.FC<Props> = ({
 
       {/* Third Box (half height, icon only) */}
       <View style={styles.smallBox}>
-        <MaterialIcons name={thirdIcon} size={16} color="black" />
+        {/* <MaterialIcons name="grip-lines-vertical" size={16} color="black" /> */}
+
+        <View style={{ flexDirection: "row" }}>
+          <FontAwesome5 name="grip-lines-vertical" size={16} color="#149777" />
+          <FontAwesome5 name="grip-lines-vertical" size={16} color="#149777" />
+        </View>
       </View>
     </View>
   );

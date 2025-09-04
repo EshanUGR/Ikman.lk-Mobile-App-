@@ -55,19 +55,40 @@ const AdCard: React.FC<{ item: AdProps }> = ({ item }:any) => {
           {item.price}
         </Text>
 
-        <MaterialIcons
-          name={item.icon2}
-          size={14}
-          color={item.priceColor || "#000"}
-          style={{ marginTop: 4 }}
-        />
+        <View
+          style={{
+            flexDirection: "row",
+          
+          }}
+        >
+          <MaterialIcons
+            name={item.icon2}
+            size={15}
+            color={ "orange"}
+            style={{ marginRight: 0 }}
+          />
+          <Text style={{ fontSize: 10, fontWeight: "500", color: "white",backgroundColor:"gray",borderRadius:2 }}>
+            MEMBER
+          </Text>
+        </View>
 
-        <MaterialIcons
-          name={item.icon1}
-          size={16}
-          color={item.priceColor || "#000"}
-          style={{ marginTop: 4 }}
-        />
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
+          <MaterialIcons
+            name={item.icon1}
+            size={16}
+            color={item.priceColor || "#000"}
+            style={{ marginTop: 2, marginRight: 6 }}
+          />
+          <Text
+            style={{
+              fontSize: 13,
+              fontWeight: "600",
+              color: "#87CEEB",
+            }}
+          >
+            Verified Seller
+          </Text>
+        </View>
       </View>
 
       {/* Post time */}
@@ -98,7 +119,7 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: "#ddd",
     backgroundColor: "#fff",
-    borderRadius: 8,
+    borderRadius: 6,
 
     // iOS Shadow
     shadowColor: "#000",
@@ -114,7 +135,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: 180, // fixed height, keeps grid uniform
+    height: 240, // fixed height, keeps grid uniform
     borderRadius: 4,
     marginBottom: 6,
   },
@@ -126,7 +147,7 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: "column",
     alignItems: "left",
-    marginTop: 2,
+    marginTop: 3
   },
   price: {
     fontSize: 14,
